@@ -52,8 +52,8 @@
     display: flex;
     flex-direction: column;
     width: 230px;
-    height: 90.5vh;
-    display: block;
+    height: 91.4vh;
+    /* display: block; */
     background-color: rgb(62, 41, 253);
 }
 .container-left-ul li{
@@ -62,9 +62,8 @@
 .container-left-ul li>a{
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
-    padding: 5px 10px 5px 30px;
-    /* margin-top: 2px; */
+    font-size: 1.2rem;
+    padding: 5px 10px 5px 15px;
     display: block; 
 }
 .container-left-ul li>a:hover{
@@ -72,16 +71,165 @@
     background-color: black;
     
 }
-.container-left-ul h2{
+.container-left-ul h3{
     text-align: center;
     color: black;
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(180, 180, 180);
 }
 
 /* /// sale list  */
-.sale-list{
-    position: absolute;
-    left: 155px;
-    color: black;
+
+.container-left-ul .sale-list{
     display: none;
 }
+.container-left-ul li:hover > .sale-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 89px;
+    color: red;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+}
+
+/* // Purchase - list  */
+.container-left-ul .purchase-list{
+    display: none;
+}
+.container-left-ul li:hover>.purchase-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 121px;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+
+}
+/* // expense-lisst  */
+.expense-list{
+    display: none;
+}
+.container-left-ul li:hover > .expense-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 184px;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+}
+
+/* // .client-list */
+.client-list{
+    display: none;
+}
+.container-left-ul li:hover> .client-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 215px;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+}
+/* // staff-list  */
+.staff-list{
+    display: none;
+}
+.container-left-ul li:hover> .staff-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 247px;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+}
+
+/* // report-list  */
+.report-list{
+    display: none;
+}
+.container-left-ul li:hover > .report-list{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 278px;
+    background-color: green;
+    box-shadow:  1px 1px 6px 1px black;
+    /* width: 180px; */
+}
+.nexticon{
+    width: 18px;
+    border-radius: 14px;
+    position: absolute;
+    right: 8px;
+    margin-top: 3px;
+}
+
+/* // Account-list */
+.account-list{
+    display: none;
+}
+.report-list li:hover> .account-list{
+    display: block;
+    position: absolute;
+    left: 215.5px;
+    top: 0;
+    width: 225px;
+    background-color: rgb(67, 129, 67);
+    box-shadow:  1px 1px 6px 1px black;
+}
+
+/* // Inventory-list // */
+.report-list .inventory{
+    display: none;
+}
+.report-list li:hover> .inventory{
+    display: block;
+    position: absolute;
+    left: 215.5px;
+    top: 31.5px;
+    background-color: rgb(67, 129, 67);
+    box-shadow:  1px 1px 6px 1px black;
+    width: 225px;
+}
+/* // Sales-list */
+#sales-list{
+    display: none;
+}
+.report-list li:hover > #sales-list{
+    display: block;
+    position: absolute;
+    left: 215.5px;
+    top: 63.5px;
+    background-color: rgb(67, 129, 67);
+    box-shadow:  1px 1px 6px 1px black;
+    width: 225px;
+}
+
+/* // Clients list  */
+#clients-list{
+    display: none;
+}
+.report-list li:hover > #clients-list{
+    display: block;
+    position: absolute;
+    left: 215.5px;
+    top: 95px;
+    background-color: rgb(67, 129, 67);
+    box-shadow:  1px 1px 6px 1px black;
+    width: 225px;
+}
+
+/* /// purchases-list  */
+
+/* .sub-purchases{
+    display: none;
+} */
+/* .report-list li:hover> .tt{
+    display: block;
+    position: absolute;
+    left: 215.5px;
+    top: 95px;
+    background-color: rgb(67, 129, 67);
+    box-shadow:  1px 1px 6px 1px black;
+    width: 225px;
+} */

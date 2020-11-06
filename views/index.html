@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billing Software</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- navigation bar -->
     <header class="header-top">
-        <div >
+        <div>
             <h1>Web Potli</h1>
         </div>
         <div class="navbar-top-right">
@@ -27,23 +29,122 @@
     <div class="main-container">
         <div class="container-left-side">
             <ul class="container-left-ul">
-                <h2>Version 1.0.0</h2>
+                <h3>Version 1.0.0</h3>
                 <li><a href="#">Sale</a>
-                <ul class="sale-list">
-                    <li><a href="#">ddddddd</a></li>
-                    <li><a href="#">ddddddd</a></li>
-                    <li><a href="#">ddddddd</a></li>
-                    <li><a href="#">ddddddd</a></li>
-                    <li><a href="#">ddddddd</a></li>
-                </ul>
-                
+                    <ul class="sale-list">
+                        <li><a href="#">New Invoice</a></li>
+                        <li><a href="#">Search and Manage Invoice</a></li>
+                        <li><a href="#">New Sale Return (Cr. Note)</a></li>
+                        <li><a href="#">Search and Manage Sale Returns</a></li>
+                        <li><a href="#">New Delivery note (Challan)</a></li>
+                        <li><a href="#">Search and Manage Delivery Notes</a></li>
+                        <li><a href="#">New Quotation</a></li>
+                        <li><a href="#">Search and Manage Quotation</a></li>
+                        <li><a href="#">New Performa Invoice</a></li>
+                        <li><a href="#">Search and Manage Performa Invoice</a></li>
+                    </ul>
+
                 </li>
-                <li><a href="#">Purchase</a></li>
+                <li><a href="#">Purchase</a>
+                    <ul class="purchase-list">
+                        <li><a href="#">Add Purchase Bill</a></li>
+                        <li><a href="#">Search and Manage Purchase Bills</a></li>
+                        <li><a href="#">Search and Manage Purchase Order</a></li>
+                        <li><a href="#">Add Purchase Return (Dr. Note)</a></li>
+                        <li><a href="#">Add Stock Adjustments</a></li>
+                        <li><a href="#">Search and Manage Stock Adjustments</a></li>
+                        <li><a href="#">Add Supplier</a></li>
+                        <li><a href="#">Search and Manage Suppliers</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Banking</a></li>
-                <li><a href="#">Expense</a></li>
-                <li><a href="#">Client</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Reports</a></li>
+                <li><a href="#">Expense</a>
+                    <ul class="expense-list">
+                        <li><a href="#">Add Expense</a></li>
+                        <li><a href="#">Search and Manage Expense</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Client</a>
+                    <ul class="client-list">
+                        <li><a href="#">Add Client</a></li>
+                        <li><a href="#">Search and Manage Clients</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Staff</a>
+                    <ul class="staff-list">
+                        <li><a href="">Add Staff</a></li>
+                        <li><a href="">Search and Manage Staff</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Reports</a>
+                    <ul class="report-list">
+                        <li><a href="#">Accounts <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul class="account-list">
+                                <li><a href="#">Cash Book</a></li>
+                                <li><a href="#">Business Book</a></li>
+                                <li><a href="#">Payment Received</a></li>
+                                <li><a href="#">Daily Summary</a></li>
+                                <li><a href="#">Input/Output Tax</a></li>
+                                <li><a href="#">Profit and Loss Summary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Inventory <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul class="inventory">
+                                <li><a href="#">Item Register</a></li>
+                                <li><a href="#">Low Level Stock</a></li>
+                                <li><a href="#">Stock Availability</a></li>
+                                <li><a href="#">Stock Adjustments</a></li>
+                                <li><a href="#">Consumable Stock</a></li>
+                                <li><a href="#">Fast Moving Items</a></li>
+                                <li><a href="#">Items Not Moving</a></li>
+                                <li><a href="#">Item List</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sales <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul id="sales-list">
+                                <li><a href="#">Search Sales</a></li>
+                                <li><a href="#">Itemwise Sales</a></li>
+                                <li><a href="#">Total Item Sales</a></li>
+                                <li><a href="#">Sale Profit/Margin</a></li>
+                                <li><a href="#">Search Sale Returns</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Clients <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul id="clients-list">
+                                <li><a href="#">Amount Due</a></li>
+                                <li><a href="#">Payment History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Purchases <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul class="sub-purchases">
+                                <li><a href="#">Search Purchase</a></li>
+                                <li><a href="#">Itemwise Purchase</a></li>
+                                <li><a href="#">Supplierwise Purchase</a></li>
+                                <li><a href="#">Search Purchases Return</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#">Suppliers <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul id="suppliers-list">
+                                <li><a href="#">Amount Balances</a></li>
+                                <li><a href="#">Payment History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Expenses <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul id="expenses-list">
+                                <li><a href="#">Search Expenses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Staff <img src="../images/nexticon.png" class="nexticon"></a>
+                            <ul id="staff-list">
+                                <li><a href="#">Search Salary</a></li>
+                                <li><a href="#">Commissions</a></li>
+                                <li><a href="#">Today Attendence</a></li>
+                                <li><a href="#">Search Attendence</a></li>
+                                <li><a href="#">Monthly Attendence</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
                 <li><a href="#">GSTR</a></li>
                 <li><a href="#">Master</a></li>
                 <li><a href="#">Tools</a></li>
@@ -60,6 +161,7 @@
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
